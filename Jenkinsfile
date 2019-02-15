@@ -1,20 +1,6 @@
 pipeline {
   agent {
     node {
-      label 'hello'
+        git url: 'https://github.com/adiboy6/hello-server.git'
     }
-
-  }
-  stages {
-    stage('first') {
-      steps {
-        echo 'hi'
-      }
-    }
-    stage('two') {
-      steps {
-        sh 'ls'
-      }
-    }
-  }
 }
