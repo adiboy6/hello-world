@@ -1,6 +1,21 @@
 pipeline {
-  agent {
-    node {
-        git url: 'https://github.com/adiboy6/hello-server.git'
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
