@@ -2,5 +2,4 @@
 First repo
 -Aditya
 
-used for testing Github Web
-hook
+used for testing Github Web hook
